@@ -7,12 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Image\Controllers\" />
     <Folder Include="Areas\Image\Data\" />
     <Folder Include="Areas\Image\Models\" />
-    <Folder Include="Areas\Image\Views\" />
-    <Folder Include="BAL\" />
-    <Folder Include="Areas\" />
   </ItemGroup>
 
   <ItemGroup>
