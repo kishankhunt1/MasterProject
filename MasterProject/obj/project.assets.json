@@ -10171,19 +10171,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mayur\\.nuget\\packages\\": {}
+    "C:\\Users\\ABC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mayur\\source\\repos\\MasterProject\\MasterProject\\MasterProject.csproj",
+      "projectUniqueName": "F:\\MasterProject\\MasterProject\\MasterProject.csproj",
       "projectName": "MasterProject",
-      "projectPath": "C:\\Users\\mayur\\source\\repos\\MasterProject\\MasterProject\\MasterProject.csproj",
-      "packagesPath": "C:\\Users\\mayur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mayur\\source\\repos\\MasterProject\\MasterProject\\obj\\",
+      "projectPath": "F:\\MasterProject\\MasterProject\\MasterProject.csproj",
+      "packagesPath": "C:\\Users\\ABC\\.nuget\\packages\\",
+      "outputPath": "F:\\MasterProject\\MasterProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mayur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ABC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10237,7 +10237,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
