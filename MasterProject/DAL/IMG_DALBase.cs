@@ -14,10 +14,10 @@ namespace MasterProject.DAL
         {
             try
             {
+                DataTable dt = new DataTable();
                 SqlDatabase sqlDB = new SqlDatabase(ConnectionString);
                 DbCommand dbCMD = sqlDB.GetStoredProcCommand("PR_Image_SelectAll");
 
-                DataTable dt = new DataTable();
                 using (IDataReader dr = sqlDB.ExecuteReader(dbCMD))
                 {
                     dt.Load(dr);
