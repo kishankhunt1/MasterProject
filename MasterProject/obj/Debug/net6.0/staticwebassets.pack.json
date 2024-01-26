@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\MasterProject.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\mayur\\source\\repos\\MasterProject\\MasterProject\\wwwroot\\Content\\Images\\167cb172-d7a5-4557-ad3f-e48631058244_Screenshot 2024-01-17 190503.png",
+      "PackagePath": "staticwebassets\\Content\\Images\\167cb172-d7a5-4557-ad3f-e48631058244_Screenshot 2024-01-17 190503.png"
+    },
+    {
+      "Id": "C:\\Users\\mayur\\source\\repos\\MasterProject\\MasterProject\\wwwroot\\Content\\Images\\8b45f6db-5532-4335-bd10-43a604a0f345_Screenshot 2024-01-19 174131.png",
+      "PackagePath": "staticwebassets\\Content\\Images\\8b45f6db-5532-4335-bd10-43a604a0f345_Screenshot 2024-01-19 174131.png"
+    },
+    {
+      "Id": "C:\\Users\\mayur\\source\\repos\\MasterProject\\MasterProject\\wwwroot\\Content\\Images\\ded89a54-a0d3-4c11-89b8-6c97a0e958c5_Screenshot 2024-01-19 174131.png",
+      "PackagePath": "staticwebassets\\Content\\Images\\ded89a54-a0d3-4c11-89b8-6c97a0e958c5_Screenshot 2024-01-19 174131.png"
+    },
+    {
       "Id": "C:\\Users\\mayur\\source\\repos\\MasterProject\\MasterProject\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

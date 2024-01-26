@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "ImageList";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    List<ImageModel> data = ViewBag.ImageList as List<ImageModel>;
 }
 
 <div class="container">
@@ -30,10 +31,13 @@
             </thead>
             <tbody>
 
-                @foreach (ImageModel d in ViewBag.ImageList)
+                @foreach (ImageModel d in data)
                 {
+                    
                     <tr class="text-center">
-                        <td>@d.Path</td>
+                        <td>
+                            <img src="~/Content/Images/@d.Path" height="100" width="100" />
+                        </td>
                         <td>@d.ImageBrand</td>
                         <td>@d.ImageDescription</td>
                         <td>

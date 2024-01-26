@@ -12,7 +12,7 @@ namespace MasterProject.BAL
         #endregion
 
         #region PR_Image_SelectAll
-        public List<ImageModel> PR_Image_SelectAll(ImageModel modelImage)
+        public List<ImageModel> PR_Image_SelectAll()
         {
             DataTable dt = dal.PR_Image_SelectAll();
             List<ImageModel> list = new List<ImageModel>();
@@ -26,6 +26,20 @@ namespace MasterProject.BAL
                 list.Add(model);
             }
             return list;
+        }
+        #endregion
+
+        #region PR_Image_Insert
+        public bool? PR_Image_Insert(ImageModel modelImage)
+        {
+            try
+            {
+                return dal.PR_Image_Insert(modelImage);
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
         #endregion
     }
