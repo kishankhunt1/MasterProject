@@ -19,7 +19,7 @@ namespace MasterProject.BAL
             foreach(DataRow dr in dt.Rows)
             {
                 ImageModel model = new ImageModel();
-                model.ImageID = Convert.ToInt32(dr["ImageID"]);
+                model.ImageID = Convert.ToInt32(dr["ImageID"].ToString());
                 model.ImageBrand = dr["ImageBrand"].ToString();
                 model.ImageDescription= dr["ImageDescription"].ToString();
                 model.Path = dr["Path"].ToString();

@@ -75,5 +75,18 @@ namespace MasterProject.Areas.Image.Controllers
         }
         #endregion
 
+        #region Delete Record
+        public IActionResult Delete(int ImageID)
+        {
+            ImageModel model = new ImageModel();
+            var data = model.Path;
+            if (data != null)
+            {
+                TempData["Success"] = "Message";
+            }
+            return View();
+        }
+        #endregion
+
     }
 }

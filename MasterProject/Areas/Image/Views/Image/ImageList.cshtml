@@ -41,8 +41,7 @@
                         <td>@d.ImageBrand</td>
                         <td>@d.ImageDescription</td>
                         <td>
-                            <button class="btn btn-secondary">Edit</button>
-                            <button class="btn btn-danger">Delete</button>
+                            <a class="btn btn-danger" asp-area="Image" asp-controller="Image" asp-action="Delete" asp-route-ImageID="@d.ImageID">Delete</a>
                         </td>
                     </tr>
                 }
