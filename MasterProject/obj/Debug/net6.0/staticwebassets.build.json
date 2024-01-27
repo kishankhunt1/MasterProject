@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4NB1aWEKYhxUZGrmjq0UuqqeBkaREBRuF74R8+0IZFQ=",
+  "Hash": "9mpuzn6rUFYNM01bpzsgK6kaR0lJg+1gQ/HZSzslXi0=",
   "Source": "MasterProject",
   "BasePath": "_content/MasterProject",
   "Mode": "Default",
@@ -51,12 +51,12 @@
       "OriginalItemSpec": "C:\\Users\\mayur\\source\\repos\\MasterProject\\MasterProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MasterProject.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\mayur\\source\\repos\\MasterProject\\MasterProject\\wwwroot\\Content\\Images\\167cb172-d7a5-4557-ad3f-e48631058244_Screenshot 2024-01-17 190503.png",
+      "Identity": "C:\\Users\\mayur\\source\\repos\\MasterProject\\MasterProject\\wwwroot\\Content\\Images\\2a500c59-660a-4250-9144-63079bf31e7c_Screenshot 2024-01-19 174131.png",
       "SourceId": "MasterProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\mayur\\source\\repos\\MasterProject\\MasterProject\\wwwroot\\",
       "BasePath": "_content/MasterProject",
-      "RelativePath": "Content/Images/167cb172-d7a5-4557-ad3f-e48631058244_Screenshot 2024-01-17 190503.png",
+      "RelativePath": "Content/Images/2a500c59-660a-4250-9144-63079bf31e7c_Screenshot 2024-01-19 174131.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -65,41 +65,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Content\\Images\\167cb172-d7a5-4557-ad3f-e48631058244_Screenshot 2024-01-17 190503.png"
-    },
-    {
-      "Identity": "C:\\Users\\mayur\\source\\repos\\MasterProject\\MasterProject\\wwwroot\\Content\\Images\\8b45f6db-5532-4335-bd10-43a604a0f345_Screenshot 2024-01-19 174131.png",
-      "SourceId": "MasterProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mayur\\source\\repos\\MasterProject\\MasterProject\\wwwroot\\",
-      "BasePath": "_content/MasterProject",
-      "RelativePath": "Content/Images/8b45f6db-5532-4335-bd10-43a604a0f345_Screenshot 2024-01-19 174131.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Content\\Images\\8b45f6db-5532-4335-bd10-43a604a0f345_Screenshot 2024-01-19 174131.png"
-    },
-    {
-      "Identity": "C:\\Users\\mayur\\source\\repos\\MasterProject\\MasterProject\\wwwroot\\Content\\Images\\ded89a54-a0d3-4c11-89b8-6c97a0e958c5_Screenshot 2024-01-19 174131.png",
-      "SourceId": "MasterProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mayur\\source\\repos\\MasterProject\\MasterProject\\wwwroot\\",
-      "BasePath": "_content/MasterProject",
-      "RelativePath": "Content/Images/ded89a54-a0d3-4c11-89b8-6c97a0e958c5_Screenshot 2024-01-19 174131.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Content\\Images\\ded89a54-a0d3-4c11-89b8-6c97a0e958c5_Screenshot 2024-01-19 174131.png"
+      "OriginalItemSpec": "wwwroot\\Content\\Images\\2a500c59-660a-4250-9144-63079bf31e7c_Screenshot 2024-01-19 174131.png"
     },
     {
       "Identity": "C:\\Users\\mayur\\source\\repos\\MasterProject\\MasterProject\\wwwroot\\css\\site.css",

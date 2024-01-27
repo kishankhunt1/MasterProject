@@ -12,9 +12,20 @@
 
         @Html.HiddenFor(x=>x.ImageID)
 
-        <div class="text-end">
-            <img src="https://placehold.jp/150x150.png" id="imgPreview" style="width:150px;height:150px" alt="Image" />
-        </div>
+
+        @if (Model.ImageID == null || Model.ImageID==0)
+        {
+            <div class="text-end">
+                <img src="https://placehold.jp/150*150.png" id="imgPreview" style="width:150px;height:150px" alt="Image" />
+            </div>
+        }
+        else
+        {
+            <div class="text-end">
+                <img src="/Content/Images/@Model.Path" id="imgPreview" style="width:150px;height:150px" alt="Image" />
+            </div>
+        }
+
 
         <div class="mb-3">
             <label for="chooseImg" class="form-label">Select Image</label>
@@ -42,22 +53,22 @@
 
 @section Scripts{
 
-        <script>
-            function previewImage(input) {
-                var imgPreview = document.getElementById('imgPreview');
-                if (input.files && input.files[0]) {
-                    var reader = new FileReader();
+    <script>
+        function previewImage(input) {
+            var imgPreview = document.getElementById('imgPreview');
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
 
-                    reader.onload = function (e) {
-                        imgPreview.src = e.target.result;
-                    };
+                reader.onload = function (e) {
+                    imgPreview.src = e.target.result;
+                };
 
-                    reader.readAsDataURL(input.files[0]);
-                } else {
-                    imgPreview.src = 'https://placehold.jp/150x150.png'; // Default image if no file is selected
-                }
+                reader.readAsDataURL(input.files[0]);
+            } else {
+                imgPreview.src = 'https://placehold.jp/150x150.png'; // Default image if no file is selected
             }
-           </script>
+        }
+    </script>
     <script>
         // Get the modal
         var modal = document.getElementById('myModal');
@@ -79,7 +90,7 @@
             modal.style.display = "none";
         }
     </script>
-           
+
 
 }
 

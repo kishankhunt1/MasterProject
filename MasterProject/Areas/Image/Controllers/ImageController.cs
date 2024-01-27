@@ -29,16 +29,25 @@ namespace MasterProject.Areas.Image.Controllers
         #endregion
 
         #region Add or Update Record
-        public IActionResult Add()
+        public IActionResult Add(int? ImageID)
         {
+            if (ImageID != 0 )
+            {
+                var model = bal.PR_Image_SelectByPK(Convert.ToInt32(ImageID));
+                return View("ImageAddEdit", model);
+            }
             return View("ImageAddEdit");
         }
         #endregion
 
         #region Save Record
         [HttpPost]
-        public IActionResult? Save(ImageModel modelImage)
+        public IActionResult Save(ImageModel modelImage)
         {
+
+
+            if (modelImage.ImageID == null)
+            {
                 string uniqueFileName = UploadImage(modelImage);
                 var data = new ImageModel()
                 {
@@ -46,13 +55,38 @@ namespace MasterProject.Areas.Image.Controllers
                     ImageDescription = modelImage.ImageDescription,
                     Path = uniqueFileName
                 };
-                if (modelImage.ImageID == 0)
+
+                if ((bool)bal.PR_Image_Insert(data))
                 {
-                    if ((bool)bal.PR_Image_Insert(data))
+                    TempData["success"] = "Image inserted successfully.";
+                }
+            }
+            else
+            {
+                var data= bal.PR_Image_SelectByPK(Convert.ToInt32(modelImage.ImageID));
+                string uniqueFileName = string.Empty;
+                if(modelImage.ImagePath != null)
+                {
+                    if(data.Path != null)
                     {
-                        TempData["success"] = "Image inserted successfully.";
+                        string filepath=Path.Combine(environment.WebRootPath,"Content/Images",data.Path);
+                        if(System.IO.File.Exists(filepath))
+                        {
+                            System.IO.File.Delete(filepath);
+                        }
+                        uniqueFileName = UploadImage(modelImage);
                     }
                 }
+                if(modelImage.ImagePath != null)
+                {
+                    data.Path = uniqueFileName;
+                }
+
+                if ((bool)bal.PR_Image_UpdateByPK(data))
+                {
+                    TempData["success"] = "Record updated successfully.";
+                }
+            }
             return RedirectToAction("Index");
         }
         #endregion
@@ -60,13 +94,13 @@ namespace MasterProject.Areas.Image.Controllers
         #region Upload Image on Folder
         private string UploadImage(ImageModel modelImage)
         {
-            string uniqueFileName=string.Empty;
-            if(modelImage.ImagePath != null)
+            string uniqueFileName = string.Empty;
+            if (modelImage.ImagePath != null)
             {
-                string uploadFolder =  Path.Combine(environment.WebRootPath,"Content/Images");
+                string uploadFolder = Path.Combine(environment.WebRootPath, "Content/Images");
                 uniqueFileName = Guid.NewGuid().ToString() + "_" + modelImage.ImagePath.FileName;
-                string filePath=Path.Combine(uploadFolder, uniqueFileName);
-                using(var fileStream=new FileStream(filePath,FileMode.Create))
+                string filePath = Path.Combine(uploadFolder, uniqueFileName);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
                 {
                     modelImage.ImagePath.CopyTo(fileStream);
                 }
@@ -78,13 +112,26 @@ namespace MasterProject.Areas.Image.Controllers
         #region Delete Record
         public IActionResult Delete(int ImageID)
         {
-            ImageModel model = new ImageModel();
-            var data = model.Path;
+
+            var data = bal.PR_Image_SelectByPK(ImageID);
             if (data != null)
             {
-                TempData["Success"] = "Message";
+                string deleteFromFolder = Path.Combine(environment.WebRootPath, "Content/Images/");
+                string currentImage = Path.Combine(Directory.GetCurrentDirectory(), deleteFromFolder, data.Path);
+                if (currentImage != null)
+                {
+                    if (System.IO.File.Exists(currentImage))
+                    {
+                        System.IO.File.Delete(currentImage);
+                    }
+                }
             }
-            return View();
+
+            if ((bool)bal.PR_Image_DeleteByPK(ImageID))
+            {
+                TempData["success"] = "Record deleted successfully";
+            }
+            return RedirectToAction("Index");
         }
         #endregion
 

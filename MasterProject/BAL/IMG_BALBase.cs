@@ -42,5 +42,49 @@ namespace MasterProject.BAL
             }
         }
         #endregion
+
+        #region PR_Image_UpdateByPK
+        public bool? PR_Image_UpdateByPK(ImageModel modelImage)
+        {
+            try
+            {
+                return dal.PR_Image_UpdateByPK(modelImage);
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+        #endregion
+
+        #region PR_Image_DeleteByPK
+        public bool? PR_Image_DeleteByPK(int ImageID)
+        {
+            try
+            {
+                return dal.PR_Image_DeleteByPK(ImageID);
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+        #endregion
+
+        #region PR_Image_SelectByPK
+        public ImageModel PR_Image_SelectByPK(int ImageID)
+        {
+            DataTable dt = dal.PR_Image_SelectByPK(ImageID);
+            ImageModel model = new ImageModel();
+            foreach (DataRow dr in dt.Rows)
+            {
+                model.ImageID = Convert.ToInt32(dr["ImageID"]);
+                model.ImageBrand = dr["ImageBrand"].ToString();
+                model.ImageDescription = dr["ImageDescription"].ToString();
+                model.Path = dr["Path"].ToString();
+            }
+            return model;
+        }
+        #endregion
     }
 }
