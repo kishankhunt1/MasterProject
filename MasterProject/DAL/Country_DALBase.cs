@@ -8,13 +8,15 @@ namespace MasterProject.DAL
     {
 
         #region Method: PR_Country_SelectAllWithPagination
-        public DataTable PR_Country_SelectAllWithPagination()
+        public DataTable PR_Country_SelectAllWithPagination(int page, int pageSize)
         {
             try
             {
                 DataTable dt = new DataTable();
                 SqlDatabase sqlDB = new SqlDatabase(ConnectionString);
                 DbCommand dbCMD = sqlDB.GetStoredProcCommand("PR_Country_SelectAllWithPagination");
+                sqlDB.AddInParameter(dbCMD, "@PageSize", SqlDbType.Int, page);
+                sqlDB.AddInParameter(dbCMD, "@PageNumber", SqlDbType.Int, pageSize);
 
                 using (IDataReader dr = sqlDB.ExecuteReader(dbCMD))
                 {
