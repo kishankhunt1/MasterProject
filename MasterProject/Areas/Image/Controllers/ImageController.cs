@@ -31,12 +31,13 @@ namespace MasterProject.Areas.Image.Controllers
         #region Add or Update Record
         public IActionResult Add(int? ImageID)
         {
-            if (ImageID != 0 )
+            var model = new ImageModel();
+            if (ImageID != null)
             {
-                var model = bal.PR_Image_SelectByPK(Convert.ToInt32(ImageID));
+                model = bal.PR_Image_SelectByPK(Convert.ToInt32(ImageID));
                 return View("ImageAddEdit", model);
             }
-            return View("ImageAddEdit");
+            return View("ImageAddEdit", model);
         }
         #endregion
 
@@ -63,21 +64,24 @@ namespace MasterProject.Areas.Image.Controllers
             }
             else
             {
-                var data= bal.PR_Image_SelectByPK(Convert.ToInt32(modelImage.ImageID));
+                var data = bal.PR_Image_SelectByPK(Convert.ToInt32(modelImage.ImageID));
                 string uniqueFileName = string.Empty;
-                if(modelImage.ImagePath != null)
+                if (modelImage.ImagePath != null)
                 {
-                    if(data.Path != null)
+                    if (data.Path != null)
                     {
-                        string filepath=Path.Combine(environment.WebRootPath,"Content/Images",data.Path);
-                        if(System.IO.File.Exists(filepath))
+                        string filepath = Path.Combine(environment.WebRootPath, "Content/Images", data.Path);
+                        if (System.IO.File.Exists(filepath))
                         {
                             System.IO.File.Delete(filepath);
                         }
                         uniqueFileName = UploadImage(modelImage);
                     }
                 }
-                if(modelImage.ImagePath != null)
+
+                data.ImageBrand = modelImage.ImageBrand;
+                data.ImageDescription = modelImage.ImageDescription;
+                if (modelImage.ImagePath != null)
                 {
                     data.Path = uniqueFileName;
                 }

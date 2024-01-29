@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9mpuzn6rUFYNM01bpzsgK6kaR0lJg+1gQ/HZSzslXi0=",
+  "Hash": "+KtMEEWHoztCSz1gcIBOlaG9OvCreOEOaE/rAAaeGIA=",
   "Source": "MasterProject",
   "BasePath": "_content/MasterProject",
   "Mode": "Default",
@@ -51,12 +51,12 @@
       "OriginalItemSpec": "C:\\Users\\mayur\\source\\repos\\MasterProject\\MasterProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MasterProject.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\mayur\\source\\repos\\MasterProject\\MasterProject\\wwwroot\\Content\\Images\\2a500c59-660a-4250-9144-63079bf31e7c_Screenshot 2024-01-19 174131.png",
+      "Identity": "C:\\Users\\mayur\\source\\repos\\MasterProject\\MasterProject\\wwwroot\\Content\\Images\\96b48ee3-5aa8-4ab6-91b0-0c52846ba88d_Screenshot 2024-01-20 181139.png",
       "SourceId": "MasterProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\mayur\\source\\repos\\MasterProject\\MasterProject\\wwwroot\\",
       "BasePath": "_content/MasterProject",
-      "RelativePath": "Content/Images/2a500c59-660a-4250-9144-63079bf31e7c_Screenshot 2024-01-19 174131.png",
+      "RelativePath": "Content/Images/96b48ee3-5aa8-4ab6-91b0-0c52846ba88d_Screenshot 2024-01-20 181139.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -65,7 +65,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Content\\Images\\2a500c59-660a-4250-9144-63079bf31e7c_Screenshot 2024-01-19 174131.png"
+      "OriginalItemSpec": "wwwroot\\Content\\Images\\96b48ee3-5aa8-4ab6-91b0-0c52846ba88d_Screenshot 2024-01-20 181139.png"
+    },
+    {
+      "Identity": "C:\\Users\\mayur\\source\\repos\\MasterProject\\MasterProject\\wwwroot\\Content\\Images\\deec5fe3-bd83-4769-b0d4-7beb2eb583a0_Screenshot 2024-01-17 093155.png",
+      "SourceId": "MasterProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mayur\\source\\repos\\MasterProject\\MasterProject\\wwwroot\\",
+      "BasePath": "_content/MasterProject",
+      "RelativePath": "Content/Images/deec5fe3-bd83-4769-b0d4-7beb2eb583a0_Screenshot 2024-01-17 093155.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Content\\Images\\deec5fe3-bd83-4769-b0d4-7beb2eb583a0_Screenshot 2024-01-17 093155.png"
     },
     {
       "Identity": "C:\\Users\\mayur\\source\\repos\\MasterProject\\MasterProject\\wwwroot\\css\\site.css",
