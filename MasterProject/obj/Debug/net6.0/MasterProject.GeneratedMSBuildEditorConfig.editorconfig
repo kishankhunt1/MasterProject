@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\mayur\source\repos\MasterProject\MasterProject
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/mayur/source/repos/MasterProject/MasterProject/Areas/Country_Pagination/Views/Country/CountryList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ291bnRyeV9QYWdpbmF0aW9uXFZpZXdzXENvdW50cnlcQ291bnRyeUxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mayur/source/repos/MasterProject/MasterProject/Areas/Country_Pagination/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ291bnRyeV9QYWdpbmF0aW9uXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mayur/source/repos/MasterProject/MasterProject/Areas/Image/Views/Image/ImageAddEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSW1hZ2VcVmlld3NcSW1hZ2VcSW1hZ2VBZGRFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
