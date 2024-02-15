@@ -3,6 +3,7 @@ using MasterProject.BAL;
 using Microsoft.AspNetCore.Mvc;
 using System.Data.SqlClient;
 using System.Data;
+using MasterProject.Areas.Country_AddEditMany.Models;
 
 namespace MasterProject.Areas.Country_Pagination.Controllers
 {
@@ -68,5 +69,11 @@ namespace MasterProject.Areas.Country_Pagination.Controllers
                 }
             }
         }
+
+
+
+
+        
+
     }
 }

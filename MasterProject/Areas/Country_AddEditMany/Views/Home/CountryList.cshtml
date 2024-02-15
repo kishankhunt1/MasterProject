@@ -1,0 +1,44 @@
+﻿@using MasterProject.Areas.Country_AddEditMany.Models;
+@{
+    ViewData["Title"] = "CountryList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>CountryList</h1>
+
+
+
+<div class="m-5 text-end">
+    <a class="btn btn-sm btn-success" asp-area="Country_AddEditMany" asp-controller="Home" asp-action="Add">Add Record</a>
+    <a class="btn btn-sm btn-primary" asp-area="Country_AddEditMany" asp-controller="Home" asp-action="AddMany">Add Many</a>
+</div>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr class="text-center">
+            <th>Country ID</th>
+            <th>Country Name</th>
+            <th>Country Code</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (CountryModel item in ViewBag.CountryList)
+        {
+            <tr class="text-center">
+                <td>
+                    @item.CountryID.ToString()
+                </td>
+                <td>
+                    @item.CountryName.ToString()
+                </td><td>
+                    @item.CountryCode.ToString()
+                </td>
+                <td>
+                    <a class="btn btn-sm btn-primary" asp-area="Country_AddEditMany" asp-controller="Home" asp-action="Add" asp-route-CountryID="@item.CountryID">Edit</a>
+                    <a class="btn btn-sm btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

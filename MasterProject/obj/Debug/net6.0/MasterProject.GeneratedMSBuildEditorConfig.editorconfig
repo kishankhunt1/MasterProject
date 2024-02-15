@@ -15,6 +15,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = F:\MasterProject\MasterProject
 build_property._RazorSourceGeneratorDebug = 
 
+[F:/MasterProject/MasterProject/Areas/Country_AddEditMany/Views/Home/AddMany.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ291bnRyeV9BZGRFZGl0TWFueVxWaWV3c1xIb21lXEFkZE1hbnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/MasterProject/MasterProject/Areas/Country_AddEditMany/Views/Home/CountryList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ291bnRyeV9BZGRFZGl0TWFueVxWaWV3c1xIb21lXENvdW50cnlMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/MasterProject/MasterProject/Areas/Country_AddEditMany/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ291bnRyeV9BZGRFZGl0TWFueVxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/MasterProject/MasterProject/Areas/Country_Pagination/Views/Country/CountryList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ291bnRyeV9QYWdpbmF0aW9uXFZpZXdzXENvdW50cnlcQ291bnRyeUxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

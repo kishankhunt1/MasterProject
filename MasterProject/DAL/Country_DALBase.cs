@@ -1,6 +1,9 @@
 ﻿using Microsoft.Practices.EnterpriseLibrary.Data.Sql;
 using System.Data.Common;
 using System.Data;
+using Microsoft.Practices.EnterpriseLibrary.Data;
+using MasterProject.Areas.Image.Models;
+using MasterProject.Areas.Country_AddEditMany.Models;
 
 namespace MasterProject.DAL
 {
@@ -31,6 +34,49 @@ namespace MasterProject.DAL
         }
         #endregion
 
-        //PR_Country_SelectAllWithPagination
+        #region Country_AddEditMany
+
+        #region SelectAllCountry
+        public DataTable SelectAllCountry()
+        {
+            try
+            {
+                SqlDatabase sqlDB = new SqlDatabase(ConnectionString);
+                DbCommand dbCMD = sqlDB.GetStoredProcCommand("SelectAllCountry");
+                DataTable dt = new DataTable();
+                using (IDataReader dr = sqlDB.ExecuteReader(dbCMD))
+                {
+                    dt.Load(dr);
+                }
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+
+        }
+        #endregion
+
+        #region InsertCountry
+        public bool? PR_Country_Insert(CountryModel modelCountry)
+        {
+            try
+            {
+                SqlDatabase sqlDB = new SqlDatabase(ConnectionString);
+                DbCommand dbCMD = sqlDB.GetStoredProcCommand("PR_Country_Insert");
+                sqlDB.AddInParameter(dbCMD, "CountryName", SqlDbType.NVarChar, modelCountry.CountryName);
+                sqlDB.AddInParameter(dbCMD, "CountryCode", SqlDbType.NVarChar, modelCountry.CountryCode);
+
+                int result = sqlDB.ExecuteNonQuery(dbCMD);
+                return (result == -1 ? false : true);
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+        #endregion
+        #endregion
     }
 }

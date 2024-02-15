@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Country_AddEditMany\Data\" />
     <Folder Include="Areas\Image\Models\" />
     <Folder Include="wwwroot\Content\Images\" />
   </ItemGroup>
