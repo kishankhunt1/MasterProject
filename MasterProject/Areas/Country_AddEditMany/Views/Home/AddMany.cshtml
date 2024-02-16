@@ -6,6 +6,8 @@
 
 <h1>Add Many Countries</h1>
 
+<h1>@TempData["warning"]</h1>
+
 <form asp-action="AddMany" method="post">
     <table id="addManyDataTable" class="table table-bordered table-striped">
         <thead>
@@ -20,13 +22,13 @@
             {
                 <tr class="text-center">
                     <td>
-                        <input type="checkbox" name="model[@i].IsSelected" />
+                        <input type="checkbox" name="model[@i].IsSelected" value="true" checked="@Model[@i].IsSelected" />
                     </td>
                     <td>
-                        <input type="text" placeholder="Enter Country Name" asp-for="model[@i].CountryName" class="form-control" />
+                        <input type="text" placeholder="Enter Country Name" name="Model[@i].CountryName" class="form-control" />
                     </td>
                     <td>
-                        <input type="text" placeholder="Enter Country Code" asp-for="model[@i].CountryCode" class="form-control" />
+                        <input type="text" placeholder="Enter Country Code" name="Model[@i].CountryCode" class="form-control" />
                     </td>
                 </tr>
             }
@@ -34,6 +36,7 @@
     </table>
     <button type="submit" class="btn btn-primary">Save</button>
 </form>
+
 
 
 
